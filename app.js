@@ -8,7 +8,7 @@ function asignarTextoElemento(elemento, texto) {
      return;
  }
  
- function verificarIntento() {
+function verificarIntento() {
      let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
      if (numeroSecreto === numeroDeUsuario){
          asignarTextoElemento('p',`Acertaste el numero en ${intentos} ${intentos===1 ? 'vez':'veces'}`);
@@ -25,11 +25,11 @@ function asignarTextoElemento(elemento, texto) {
      }
      return;
  }
- function limpiarCaja(){
+function limpiarCaja(){
      document.querySelector('#valorUsuario').value ='';
  }
   
- function generarNumeroSecreto() {
+function generarNumeroSecreto() {
      let numerosGenerado = Math.floor(Math.random()*numeroMaximo)+1;
      console.log(numerosGenerado);
      console.log(numerosSorteado);
@@ -44,7 +44,7 @@ function asignarTextoElemento(elemento, texto) {
              
              return numerosGenerado;
          } 
-     function condicionesIniciales() {
+function condicionesIniciales() {
      asignarTextoElemento('h1','Juego del numero secreto');
      asignarTextoElemento('p',`Ingresa un numero del 1 al ${numeroMaximo}`);
      intentos = 1;
